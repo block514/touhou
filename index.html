@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>东方project</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #ececec;
+    }
+    * {
+      border: 1px solid #333;
+    }
+    .flex {
+      display: flex;
+    }
+    .HS {
+      background-color: #ececec;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .flex3 {
+      flex: 3;
+    }
+    .mg30 {
+      margin: 25px;
+    }
+    .mgr30 {
+      margin-right: 30px;
+    }
+    .mgt25 {
+      margin-top: 25px;
+    }
+    .mgt35 {
+      margin-top: 35px;
+    }
+    .mgt56 {
+      margin-top: 56px;
+    }
+    .BS {
+      background-color: rgb(246, 248, 250);
+    }
+    .NR::-webkit-scrollbar {
+      display: none;
+    }
+    .GD300 {
+      height: 300px;
+    }
+    .GD120 {
+      height: 120px;
+    }
+    .GD465 {
+      height: 465px;
+    }
+    .GD200 {
+      height: 200px;
+    }
+  </style>
+  <body class="flex">
+    <!-- 主区域 -->
+    <div class="flex flex1 column">
+      <!-- 顶部栏 -->
+      <div style="height: 68px; z-index: 2" class="BS"></div>
+      <!-- 内容 -->
+      <div class="flex flex1 R" style="overflow: auto">
+        <!-- 左区域 -->
+        <div style="flex: 1" class="flex column HS"></div>
+        <!-- z区域 -->
+        <div style="flex: 6" class="flex column mg30">
+          <!-- 数据区 -->
+          <div class="flex">
+            <!-- 滚动栏 -->
+            <div class="flex3 GD300 mgr30 BS"></div>
+            <!-- 数据栏 -->
+            <div class="flex1 GD300 mgr30">
+              <div class="GD120 BS"></div>
+              <div class="GD120 mgt56 BS"></div>
+            </div>
+            <div class="flex1 GD300 mgr30">
+              <div class="GD120 BS"></div>
+              <div class="GD120 mgt56 BS"></div>
+            </div>
+            <div class="flex1 GD300 mgr30">
+              <div class="GD120 BS"></div>
+              <div class="GD120 mgt56 BS"></div>
+            </div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex mgt25">
+            <div class="flex1 GD465 mgr30 mgt25">
+              <div class="GD200 BS"></div>
+              <div class="GD200 mgt35 BS"></div>
+            </div>
+            <div class="flex1 GD465 mgr30 mgt25">
+              <div class="GD200 BS"></div>
+              <div class="GD200 mgt35 BS"></div>
+            </div>
+            <div class="flex1 GD465 mgr30 mgt25">
+              <div class="GD200 BS"></div>
+              <div class="GD200 mgt35 BS"></div>
+            </div>
+            <div class="flex1 GD465 mgr30 mgt25">
+              <div class="GD200 BS"></div>
+              <div class="GD200 mgt35 BS"></div>
+            </div>
+            <div class="flex1 GD465 mgr30 mgt25">
+              <div class="GD200 BS"></div>
+              <div class="GD200 mgt35 BS"></div>
+            </div>
+            <!-- 列表2 -->
+          </div>
+        </div>
+        <!-- 右区域 -->
+        <div style="flex: 1" class="flex column HS"></div>
+      </div>
+    </div>
+  </body>
+</html>
